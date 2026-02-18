@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmg</title>
+
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bmg.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navlogo">
+                <img src="bmgnamelogo.png" alt="">
+            </div>
+
+            <div class="navcenter">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+
+            <div class="navright">
+                <a href="appointment.html" class="appntmnt">Appointment</a>
+            </div>
+        </nav>    
+    </header>
+
+    
+    <form id="appointment-form">
+        <h2>Book an Appointment</h2>
+
+        <div class="left-column">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+        
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required pattern="[0-9]{11}" placeholder="e.g. 09123456789" maxlength="11">
+        
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+        
+            <label for="time">Preferred Time</label>
+            <select id="time" name="time" required>
+                <option value="" disabled selected>Select time slot</option>
+                
+                <option value="8:00 AM">8:00 AM</option>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+            </select>
+        </div>
+
+        <div class="right-column">
+            <fieldset>
+                <legend>Select Service Categories (you can pick multiple):</legend>
+                <label><input type="checkbox" name="categories" value="nails"> Nails</label><br>
+                <label><input type="checkbox" name="categories" value="lashes"> Lashes</label><br>
+                <label><input type="checkbox" name="categories" value="brows"> Brows</label><br>
+                <label><input type="checkbox" name="categories" value="hair"> Hair</label><br>
+                <label><input type="checkbox" name="categories" value="body"> Body</label><br>
+            </fieldset>
+        
+            <label for="additionalMessage" >Service Details</label>
+            <textarea id="additionalMessage" name="additionalMessage" required rows="6" placeholder="Please specify the services you would like to book."></textarea>
+        </div>
+        
+        <button type="submit" class="btnappntmnt">Submit</button>
+
+    </form>
+
+  
+
+
+
+  
+
+
+
+
+    
+  
+    <footer class="footer">
+        <div class="footercontainer">
+            <div class="ftrcontent">
+                <h2>BMG Eyelash Extension</h2>
+                <p>BMG is your trusted destination for complete beauty and wellness care. We offer a wide range of services including nails, lashes, brows, hair, and body treatments—each designed to help you look and feel your best. At BMG, self-care isn’t just a luxury—it’s a lifestyle.</p>
+            </div>
+        
+            <div class="ftrcontent">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                </ul>
+            </div>
+        
+            <div class="ftrcontent">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html#nails">Nails</a></li>
+                    <li><a href="services.html#lashes">Lashes</a></li>
+                    <li><a href="services.html#brows">Brows</a></li>
+                    <li><a href="services.html#hair">Hair</a></li>
+                    <li><a href="services.html#body">Body</a></li>
+                </ul>
+            </div>
+        
+            <div class="ftrcontent">
+                <h3>Get in Touch</h3>
+                <ul>
+                    <li><i class="bxr  bx-location-alt-2"></i>&nbsp;Atienza St., Brgy. Bagong Sikat, Lemery</li>
+                    <li><i class="bxr  bx-phone"></i>&nbsp;+63915-509-6426</li>
+                    <li><i class="bxr  bx-envelope-open"></i>&nbsp;ma.glendam@yahoo.com</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="footerbottom">
+        <p>Copyright &copy; 2025 BMG. All rights served.</p>
+    </div>
+<script src="bmg.js"></script>
+</body>
+</html>
